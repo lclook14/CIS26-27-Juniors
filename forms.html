@@ -8,7 +8,7 @@
   <h1>Custom PC Build Request</h1>
   <p>Fill out this form and our build team will spec out your dream PC.</p>
   <p><a href="index.html">Back to home</a></p>
-
+ 
   <!-- ==========================================================
        PART 1 (zyBooks 3.2 Forms)
        1. Add a <form> with action="https://httpbin.org/get" and target="_blank"
@@ -20,50 +20,45 @@
        5. Test it, read the URL. Then change to method="POST" and
           action="https://httpbin.org/post" and test again.
        ========================================================== -->
-
-   <form action="#" method="GET">
+ 
+  <form action="#" method="GET">
       <fieldset>
          <legend>Your Info</legend>
-      <p>
-         <lable for="first">First Name:</label>
-         <input type="text" name="first" id="first" placeholder="Enter your first name" required>
-         </p>
-         <!-- NOTE: Input elemnts are VOID elements - so they do not include a closing tag -->
-          <p>
-         <lable for="last">Last Name:</label>
-         <input type="text" name="last" id="last" placeholder="Enter your last name" required>
-         </p>
-         
-         
-         
-         
+   <p>
+    <label for="first">First Name:</label>
+    <input type="text" id="first" name="first" id="first" placeholder="Enter your first name" required><br>
+    <!-- NOTE: Input elements are void elements - so they do not include a closing tag-->
+    <label for="last">Last Name:</label>
+    <input type="text" id="last" name="last" placeholder="Enter your last name" required><br>
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes" rows="5" cols="50"></textarea><br>
+    <input type="submit">
+   </p>
       </fieldset>
-
-      <fieldset>
+ 
+   <!-- drop-down and list box-->
+<fieldset>
          <legend>Software and Ports</legend>
-         
-         <label for="os">Operating System</label>
-         <select name="os" id="os">
-            <option value="win11">Windows 11</option>
-            <option value="ubuntu">Linux (Ubuntu)</option>
-            <option value="none">No OS</option>
-         </select>
          <p>
-            <label for="ports">Ports needed (hold CTRL or command to pick more than one):</label>
-            select name="ports" id="ports" size="4" multiple>
-               <option value="usbc">USB-C</option>
-               <option value="hdmi">HDMI</option>
-               <option value="displayport">Display Port</option>
-               <option value="ethernet">Ethernet</option>
-               <option value="thunderbolt">Thunderbolt</option>
-            </select>
+            <label for="os">Operating System:</label>
+         <select id="os" name="os">
+             <option value="windows11">Windows 11</option>
+             <option value="Ubuntu">Linux (Ubuntu)</option>
+             <option value="None">No OS</option>
+         </select><br>
+         <label for="ports">Ports needed (hold Ctrl or Command to pick more than one):</label>
+         <select id="ports" name="ports" size="4" multiple>
+             <option value="usbc">USB-C</option>
+             <option value="hdmi">HDMI</option>
+             <option value="ethernet">Ethernet</option>
+             <option value="audio">Audio</option>
+             <option value="displayport">DisplayPort</option>
+             <option value="thunderbolt">Thunderbolt</option>
+         </select><br>
          </p>
       </fieldset>
-      <input type="submit" 
-   </form>
-   
-
-
+  </form>
+ 
   <!-- ==========================================================
        PART 2 (zyBooks 3.3 Common form widgets)  -- inside the form
        1. Wrap first/last name in <fieldset> with <legend>Your Info</legend>
@@ -76,9 +71,9 @@
        7. Replace the submit input with <button type="submit">
           and add <input type="button" value="Save for Later">
        ========================================================== -->
-
-
-
+ 
+ 
+ 
   <!-- ==========================================================
        PART 3 (zyBooks 3.4 Additional form widgets)  -- inside the form
        1. Email (type="email") and phone (type="tel") in Your Info
@@ -93,6 +88,7 @@
           minlength="8" on tracker; a pattern on phone
        4. Try to BREAK your form -- submit it empty, type bad data
        ========================================================== -->
-
+ 
 </body>
 </html>
+ 
