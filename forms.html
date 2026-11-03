@@ -22,22 +22,47 @@
        ========================================================== -->
 
    <form action="#" method="GET">
+      <fieldset>
+         <legend>Your Info</legend>
       <p>
          <lable for="first">First Name:</label>
-         <input type="text" name="first" id="first" placeholder="Enter your first name">
+         <input type="text" name="first" id="first" placeholder="Enter your first name" required>
          </p>
          <!-- NOTE: Input elemnts are VOID elements - so they do not include a closing tag -->
           <p>
          <lable for="last">Last Name:</label>
-         <input type="text" name="last" id="last" placeholder="Enter your last name">
+         <input type="text" name="last" id="last" placeholder="Enter your last name" required>
          </p>
+         
+         
+         
+         
+      </fieldset>
+
+      <fieldset>
+         <legend>Software and Ports</legend>
+         
+         <label for="os">Operating System</label>
+         <select name="os" id="os">
+            <option value="win11">Windows 11</option>
+            <option value="ubuntu">Linux (Ubuntu)</option>
+            <option value="none">No OS</option>
+         </select>
          <p>
-         <lable for="notes">Additional Notes:</label>
-         <textarea name="notes" id="notes" rows="5" cols="50"></textarea>
-         <p>
-         <input type="submit" value="Submit">
-      </p>
+            <label for="ports">Ports needed (hold CTRL or command to pick more than one):</label>
+            select name="ports" id="ports" size="4" multiple>
+               <option value="usbc">USB-C</option>
+               <option value="hdmi">HDMI</option>
+               <option value="displayport">Display Port</option>
+               <option value="ethernet">Ethernet</option>
+               <option value="thunderbolt">Thunderbolt</option>
+            </select>
+         </p>
+      </fieldset>
+      <input type="submit" 
    </form>
+   
+
 
   <!-- ==========================================================
        PART 2 (zyBooks 3.3 Common form widgets)  -- inside the form
