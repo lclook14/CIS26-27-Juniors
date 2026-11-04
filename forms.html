@@ -34,6 +34,48 @@
     <textarea id="notes" name="notes" rows="5" cols="50"></textarea><br>
     <input type="submit">
    </p>
+   <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="name@domain.com" required><br>
+   </p>
+   <p>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-555-7890"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-555-7890"><br>
+   </p>
+   <p>
+      <label for="tracker">Order tracking password (8-12 characters):</label>
+      <input type="password" id="tracker" name="tracker" size="12" maxlength="12" minlength="8" required><br>
+   </p>
+      </fieldset>
+
+      <fieldset>
+         <legend>Processor (pick one)</legend>
+         <div>
+            <input type="radio" id="i5" name="cpu" value="i5" checked>
+            <label for="i5">Intel Core i5</label><br>
+         </div>   
+         <div>
+            <input type="radio" id="i7" name="cpu" value="i7">
+            <label for="i7">Intel Core i7</label><br>
+         </div>
+         <div>
+            <input type="radio" id="ryzen5" name="cpu" value="ryzen5">
+            <label for="ryzen5">AMD Ryzen 5</label><br>
+         </div>
+         <div>
+            <input type="radio" id="atom" name="cpu" value="atom">
+            <label for="atom">Intel Atom</label><br>
+         </div>
+         <div>
+            <input type="radio" id="ryzen7" name="cpu" value="ryzen7">
+            <label for="ryzen7">AMD Ryzen 7</label><br>
+         </div>  
+
+         
+            
+         
+            
       </fieldset>
  
    <!-- drop-down and list box-->
