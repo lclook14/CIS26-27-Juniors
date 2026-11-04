@@ -32,7 +32,6 @@
     <input type="text" id="last" name="last" placeholder="Enter your last name" required><br>
     <label for="notes">Notes:</label>
     <textarea id="notes" name="notes" rows="5" cols="50"></textarea><br>
-    <input type="submit">
    </p>
    <p>
       <label for="email">Email:</label>
@@ -77,7 +76,28 @@
          
             
       </fieldset>
- 
+
+      <!-- checkboxes -->
+      <fieldset>
+         <legend>Extras (check all that apply)</legend>
+         <div>
+            <input type="checkbox" id="wifi" name="extras" value="wifi" checked>
+            <label for="wifi">WiFi</label><br>
+         </div>
+         <div>
+            <input type="checkbox" id="wifi" name="wifi" checked>
+            <label for="wifi">Wi-Fi Card</label><br>
+         </div>
+         <div>
+            <input type="checkbox" id="rgb" name="rgb" value="rgb">
+            <label for="rgb">RGB Lighting</label><br>
+         </div>
+         <div>
+            <input type="checkbox" id="extraSsd" name="extraSsd" value="extraSsd">
+            <label for="extraSsd">Extra SSD</label>Second SSD<br>
+         </div>
+      </fieldset>
+
    <!-- drop-down and list box-->
 <fieldset>
          <legend>Software and Ports</legend>
@@ -97,6 +117,22 @@
              <option value="displayport">DisplayPort</option>
              <option value="thunderbolt">Thunderbolt</option>
          </select><br>
+         </p>
+      </fieldset>
+
+      <fieldset>
+         <legend>Build Details</legend>
+         <p>
+            <label for="budget">Budget in dollars (500-3000):</label>
+            <input type="number" id="budget" name="budget" min="500" max="3000" step="50" value="1000"><br>
+         </p>
+         <p>
+            <label for="rgbLevel">RGB brightness (0-100):</label>
+            <input type="range" id="rgbLevel" name="rgbLevel" min="0" max="100" step="10" value="50"><br>
+         </p>
+         <p>
+            <label for="caseColor">Case color:</label>
+            <input type="color" id="caseColor" name="caseColor" value="#4268d3"><br>
          </p>
       </fieldset>
   </form>
@@ -130,6 +166,10 @@
           minlength="8" on tracker; a pattern on phone
        4. Try to BREAK your form -- submit it empty, type bad data
        ========================================================== -->
+
+       
+
+       <input type="submit">
  
 </body>
 </html>
