@@ -30,9 +30,7 @@
     <!-- NOTE: Input elements are void elements - so they do not include a closing tag-->
     <label for="last">Last Name:</label>
     <input type="text" id="last" name="last" placeholder="Enter your last name" required><br>
-    <label for="notes">Notes:</label>
-    <textarea id="notes" name="notes" rows="5" cols="50"></textarea><br>
-   </p>
+    </p>
    <p>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" placeholder="name@domain.com" required><br>
@@ -134,7 +132,37 @@
             <label for="caseColor">Case color:</label>
             <input type="color" id="caseColor" name="caseColor" value="#4268d3"><br>
          </p>
+         <p>
+            <label for="neededBy">Needed by:</label>
+            <input type="date" id="neededBy" name="neededBy" min="2026-11-10" max="2026-06-30"><br>
+         </p>
+         <p>
+            <label for="game">Main game or app you will run:</label>
+            <input list="games" id="games" name="games">
+            <datalist id="games">
+               <option value="Minecraft">
+               <option value="Fortnite">
+               <option value="Rocket League">
+               <option value="Valorant">
+               <option value="Visual Studio Code">
+              
+            </datalist><br>
+         </p>
+         <p>
+            <label for="portfolio">Your GitHub Pages site:</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://username.github.io"><br>
+         </p>
       </fieldset>
+
+      <p>
+         <label for="notes">Anything else the build team should know?</label>
+         <textarea id="notes" name="notes" rows="5" cols="50" placeholder="Example: needs to be quiet, must fit under my desk..."> </textarea>
+      </p>
+
+      <p>
+         <button type="submit">Submit Build Request</button>
+         <input type="button" value="Save for Later">
+      </p>
   </form>
  
   <!-- ==========================================================
